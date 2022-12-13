@@ -1,0 +1,1 @@
+For all folders in phase-two, node_modules has been added to .gitignore before committing.
