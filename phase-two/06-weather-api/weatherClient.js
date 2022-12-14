@@ -7,7 +7,7 @@ class WeatherClient {
   fetchWeatherData(city, callbackFunction) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`;
     get(apiUrl, (response) => {
-      let responseObject = JSON.parse(response);
+      const responseObject = JSON.parse(response);
       return callbackFunction(responseObject);
     });
   }
@@ -17,6 +17,6 @@ module.exports = WeatherClient;
 
 // const client = new WeatherClient();
 
-// client.fetchWeatherData('London', (weatherData) => {
+// client.fetchWeatherData('Bristol', (weatherData) => {
 //   console.log(weatherData);
 // });
