@@ -5,3 +5,7 @@ const fetchJson = (url, callbackFunction) => {
 };
 
 module.exports = fetchJson;
+
+fetchJson('https://jsonplaceholder.typicode.com/todos', (response) => {
+  console.log(response);
+});
