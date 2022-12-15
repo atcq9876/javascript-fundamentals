@@ -31,12 +31,8 @@ class Weather {
 
 module.exports = Weather;
 
-const client = new WeatherClient();
-const weather = new Weather(client);
-
-weather.fetch('London');
-
+// const client = new WeatherClient();
+// const weather = new Weather(client);
+// weather.fetch('London');
 // setTimeout(() => { console.log(weather.getWeatherData()) }, 1000);
-// console.log(weather.getWeatherData());
-
-setTimeout(() => { console.log(weather.displayWeather()) }, 1000);
+// setTimeout(() => { console.log(weather.displayWeather()) }, 1000);
